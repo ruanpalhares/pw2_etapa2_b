@@ -4,7 +4,7 @@
   "description": "Aplicação para aprendizagem do NodeJs com Express e MySQL",
   "main": "index.js",
   "scripts": {
-    "test": "npm start"
+    "test": "node ./index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
     "nodejs"
   ],
   "author": "Victor Sena Icoma",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
