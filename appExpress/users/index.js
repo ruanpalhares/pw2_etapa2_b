@@ -14,6 +14,7 @@ router.post('/save', (req, res) =>{
 
     console.info(name)
     console.info(age)
+    res.status(200).sendFile(`${basePath}/userForm.html`)
 })
 
 router.get('/:id', (req, res) => {
