@@ -3,9 +3,25 @@
 <div>
     Podemos utilizar objetos do Javascript na engine:
     <h3>Usuário</h3>
+    <form action="/verifyUser" method="post">
+        <input type="text" name="name" id="name" placeholder="Entre com seu nome">
+        <input type="text" name="surname" id="surname" placeholder="Seu sobrenome">
+        <input type="text" name="age" id="age" placeholder="Digite sua idade">
+        <input type="submit" value="Entrar">
+    </form>
     <ul>
         <li>{{ user.name }}</li>
         <li> {{user.surname}} </li>
         <li> {{user.age}} </li>
     </ul>
+    {{#if user.approved}}
+    <p>
+        Aréa de login do site click <a href="/dashboards">aqui</a>
+        para acessar as dashboards.
+    </p>
+    {{else}}
+    <p>
+        Rapaz você não tem acesso ao ambiente de login do web aplicação.
+    </p>
+    {{/if}}
 </div>
