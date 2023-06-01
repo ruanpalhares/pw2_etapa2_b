@@ -18,7 +18,7 @@
     "sequelize",
     "thought"
   ],
-  "author": "Victor Sena Icoma",
+  "author": "Ruan Palhares",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
